@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tours and Travels</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styl.css">
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    </link>
+    
+</head>
+<body>
+
+
+ <!-- Navigation Menu -->
+<nav class="navbar navbar-expand-lg bg-light" id="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="#" id="logo"><span>T</span>ravel</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span><i class="fa-solid fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+
+              <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Destinations
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Domestic</a>
+          <a class="dropdown-item" href="#">International</a>
+        </div>
+      </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+    </div>
+  </div>
+
+     <button data-toggle="modal" data-target="#register" class="btn btn-primary"> Register </button>
+   <div class="modal" id="register">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"> <h5> Register Form </h5> <button class="close" data-dismiss="modal"> &times;</button> </div>
+        <div class="modal-body">
+          <form>
+
+            <div class="form-group">
+              Username - <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+              Contact - <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+              EmailId - <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+              password - <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+              <input type="submit" value="Register" class="btn btn-success">
+              </div>
+              <p>Already Have An Account? <a href="#loginform" data-toggle="modal" data-dismiss="modal">Sign In</a> </p>
+          </form>
+        </div>
+        <div class="modal-footer"> <button class="btn btn-danger" data-dismiss="modal">Cancle</button></div>
+        </div>
+      </div>
+  </div>
+  &nbsp;
+  &nbsp;
+  <button data-toggle="modal" data-target="#loginform"class="btn btn-primary"> Login </button>
+  <div class="modal" id="loginform">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"> <h5> Login Form </h5> <button class="close" data-dismiss="modal"> &times;</button> </div>
+          <div class="modal-body">
+            <form>
+            
+              <div class="form-group">
+                Email ID - <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                password - <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Login" class="btn btn-success">
+              </div>
+              <p>Don't Have An Account? <a href="#register" data-toggle="modal" data-dismiss="modal">Sign Up</a></p>
+            </form>
+          </div>
+        <div class="modal-footer"> <button class="btn btn-danger" data-dismiss="modal">Cancle</button></div>
+      </div>
+    </div>
+  </div>
+
+
+</nav>
+
+
+
+<!-- Jumbotron with Data -->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container text-center">
+    <h1 class="display-4">Explore the World with Us</h1>
+    <p class="lead">Discover Your Next Adventure</p>
+  </div>
+</div>
+
+<!-- About Us Section -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="main-txt">
+      <h1>About <span> Us </span></h1>
+    </div>
+
+    <div class="row" style="margin-top: 50px;">
+      <div class="col-md-6 py-3 py-md-0">
+        <div class="card">
+          <img src="images\flight.jpg">
+        </div>
+      </div>
+
+      <div class="col-md-6 py-3 py-md-0">
+        <h2>How travel agency works</h2>
+        <p>1] Research the market and plan your services.<br>
+           2] Complete legal requirements and obtain necessary licenses.<br>
+           3] Create a business plan outlining objectives and strategies.<br>
+           4] Decide on your business location, whether physical or online.<br>
+           5] Establish partnerships with travel service providers.<br>
+           6] Develop a brand identity and marketing strategy.<br>
+           7] Promote your agency through various channels.<br>
+           8] Provide excellent customer service.<br>
+           9] Stay informed about travel industry trends and regulations.</p>
+        <button id="about-btn">Read more</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!section service start-->
+  <section class="services" id="services">
+    <div class="container">
+
+      <div class="main-txt">
+        <h1><span>S</span>ervices</h1>
+      </div>
+
+      <div class="row" style="margin-top:30px">
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <i class="fas fa-hotel"></i>
+            <div class="card-body">
+              <h3>Affordable Hotel</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <i class="fas fa-utensils"></i>
+            <div class="card-body">
+              <h3>Food & Drinks</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <i class="fas fa-bullhorn"></i>
+            <div class="card-body">
+              <h3>Safty Guide</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="row" style="margin-top:30px">
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <i class="fas fa-globe-asia"></i>
+            <div class="card-body">
+              <h3>Around the World</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <i class="fas fa-plane"></i>
+            <div class="card-body">
+              <h3>Fastest Travel</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <i class="fas fa-hiking"></i>
+            <div class="card-body">
+              <h3>Adventures</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+   </div>
+  </section>
+
+  
+
+<!-- Gallery Section -->
+
+<section class="gallary" id="gallary">
+  <div class="container">
+
+    <div class="main-txt">
+      <h1><span>G</span>allary</h1>
+    </div>
+    <div class="row" style="margin-top:30px">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="images/g1.jpg" height="230px">
+        </div>
+      </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="images/g2.jpg" height="230px">
+        </div>
+      </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="images/g3.jpg" height="230px">
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:30px">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="images/g4.jpg" height="230px">
+        </div>
+      </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="images/g6.jpg" height="230px">
+        </div>
+      </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="images/tr5.jpg" height="230px">
+        </div>
+      </div>
+
+    </div>
+
+</section>
+
+
+<!-- Slider for Featured Destinations -->
+<section id="featured-slider" class="py-5">
+  <div class="container">
+    <h1>Featured <span> Destinations </span></h1>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/spain.jpg" class="d-block w-100" alt="Destination 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h1><span>S</span>pain</h1>
+            <p>Spain, known for its rich cultural heritage, diverse landscapes, and vibrant cities, offers a perfect blend of history, art, and culinary delights. Explore iconic landmarks like the Sagrada Familia in Barcelona, indulge in delicious tapas, or bask in the sun on the beautiful beaches of the Costa del Sol.</p>
+            <a href="tel:+1234567890" class="btn btn-primary">Call to Book</a> <!-- Added Call to Action button with tel link -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/usa.jpg" class="d-block w-100" alt="Destination 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h1><span>U</span>SA</h1>
+            <p>The United States boasts a wide array of attractions, from the stunning natural wonders of the Grand Canyon and Yellowstone National Park to the bustling metropolises of New York City and Los Angeles. Experience the American dream as you journey through the diverse landscapes and vibrant cultures of this vast country.</p>
+            <a href="tel:+1234567890" class="btn btn-primary">Call to Book</a> <!-- Added Call to Action button with tel link -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/turkey.jpg" class="d-block w-100" alt="Destination 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h1><span>T</span>urky</h1>
+            <p>Turkey, bridging the gap between Europe and Asia, is a treasure trove of historical sites, breathtaking landscapes, and culinary delights. Marvel at the ancient ruins of Ephesus, cruise along the stunning Turquoise Coast, or savor the flavors of traditional Turkish cuisine in Istanbul's bustling markets.</p>
+            <a href="tel:+1234567890" class="btn btn-primary">Call to Book</a> <!-- Added Call to Action button with tel link -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/russia.jpg" class="d-block w-100" alt="Destination 4">
+          <div class="carousel-caption d-none d-md-block">
+            <h1><span>R</span>ussia</h1>
+            <p>Russia, the largest country in the world, offers a fascinating blend of history, culture, and natural beauty. Explore the majestic palaces of St. Petersburg, marvel at the iconic Red Square in Moscow, or embark on an unforgettable journey on the Trans-Siberian Railway through the picturesque Siberian wilderness.</p>
+            <a href="tel:+1234567890" class="btn btn-primary">Call to Book</a> <!-- Added Call to Action button with tel link -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/japan.jpg" class="d-block w-100" alt="Destination 5">
+          <div class="carousel-caption d-none d-md-block">
+            <h1><span>J</span>apan</h1>
+            <p>Japan, a land of ancient traditions and cutting-edge technology, captivates visitors with its unique blend of old and new. Discover the serene beauty of Kyoto's temples and gardens, experience the hustle and bustle of Tokyo's neon-lit streets, or indulge in the exquisite flavors of Japanese cuisine, from sushi to ramen.</p>
+            <a href="tel:+1234567890" class="btn btn-primary">Call to Book</a> <!-- Added Call to Action button with tel link -->
+          </div>
+        </div>
+        <!-- Add more carousel items as needed -->
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!--login/register form-->
+      
+<section class="book" id="book">
+  <div class="container">
+
+    <div class="main-text">
+      <h1><span>B</span>ook</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 py-3 py-md-0">
+        <div class="card">
+          <img src="images\travel.jpg">
+        </div>
+      </div>
+      <div class="col-md-6 py-3 md-0">
+        <form action="#">
+          
+          <input type="text" class="form-control" placeholder="Username"required><br>
+          <input type="email" class="form-control" placeholder="Email ID"required><br>
+          <input type="password" class="form-control" placeholder="Password"required><br>
+          <input type="submit" value="Register" class="submit" required>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p>Address: At post Tiwara,Dhamangaon Rly,Amravati,Maharashtra-444709</p>
+        <p>Email: sakshibhagwat2552004@gmail.com</p>
+        <p>Phone: +9552-----</p>
+      </div>
+      <div class="col-md-6">
+        <!-- Social media links with Font Awesome icons -->
+        <a href="https://www.linkedin.com/in/sakshi-bhagwat-487176259" class="text-white mr-3"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/sakshi_bhagwat25?igsh=MXJwbHBlMDdrZDZuNg==" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
